@@ -4,7 +4,7 @@ import { HtmlProps } from 'next/dist/shared/lib/html-context';
 
 interface Props {
   href: string;
-  clasName: string;
+  clasName?: string;
 }
 
 const Link: FC<
