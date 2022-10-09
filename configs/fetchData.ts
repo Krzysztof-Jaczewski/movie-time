@@ -22,7 +22,7 @@ const genresObjects = genres.reduce(
   {},
 );
 
-export const fetchData = {
+const fetchData = {
   fetchTrending: {
     title: 'Trending',
     url: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -34,4 +34,5 @@ export const fetchData = {
   ...genresObjects,
 };
 
-console.log(fetchData);
+export const contentData =
+  Object.entries(fetchData);
