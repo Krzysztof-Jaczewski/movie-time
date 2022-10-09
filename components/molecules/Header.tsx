@@ -9,7 +9,7 @@ import Logo from 'components/atoms/Logo';
 
 const Header: FC = () => {
   return (
-    <header className='flex flex-col gap-5 sm:flex-row m-5 justify-between items-center'>
+    <header className='flex flex-col gap-5 sm:flex-row m-5 lg:pr-20 justify-between items-center'>
       <div className='flex flex-grow justify-between max-w-xl'>
         {headerIconProps.map(
           ({ title, Icon }) => (
