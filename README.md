@@ -12,6 +12,13 @@ First clone the repository
 pnpm install
 ```
 
+add .env.local file and add variables with your api key from TMDB nad url for
+base site and images like in
+
+```
+/config/envs
+```
+
 run the development server:
 
 ```
