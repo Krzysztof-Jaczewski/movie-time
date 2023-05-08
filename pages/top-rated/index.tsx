@@ -15,7 +15,7 @@ interface Props {
     total_results: number;
 }
 
-const TopRated: NextPage<Props> = ({ results }) => {
+const TopRatedPage: NextPage<Props> = ({ results }) => {
     return (
         <div>
             <Head>
@@ -23,12 +23,12 @@ const TopRated: NextPage<Props> = ({ results }) => {
                 <link rel='icon' href='/movieIcon.png' />
             </Head>
             <Header />
-            <MoviesList moviesArray={results} /> footer
+            <MoviesList moviesArray={results} />
         </div>
     );
 };
 
-export default TopRated;
+export default TopRatedPage;
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const request = await axios.get(

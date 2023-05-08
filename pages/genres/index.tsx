@@ -15,7 +15,7 @@ interface Props {
     total_results: number;
 }
 
-const Home: NextPage<Props> = ({ results }) => {
+const GenresPage: NextPage<Props> = ({ results }) => {
     return (
         <div>
             <Head>
@@ -24,12 +24,12 @@ const Home: NextPage<Props> = ({ results }) => {
             </Head>
             <Header />
             <Navbar />
-            <MoviesList moviesArray={results} /> footer
+            <MoviesList moviesArray={results} />
         </div>
     );
 };
 
-export default Home;
+export default GenresPage;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { genre } = context.query;

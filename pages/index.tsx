@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ results }) => {
                 <link rel='icon' href='/movieIcon.png' />
             </Head>
             <Header />
-            <MoviesList moviesArray={results} /> footer
+            <MoviesList moviesArray={results} />
         </div>
     );
 };
