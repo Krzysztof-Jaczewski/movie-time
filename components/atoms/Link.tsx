@@ -1,20 +1,21 @@
 import { FC, HTMLProps } from 'react';
 import NextLink from 'next/link';
-import { HtmlProps } from 'next/dist/shared/lib/html-context';
 
 interface Props {
-  href: string;
-  clasName?: string;
+    href: string;
+    className?: string;
 }
 
-const Link: FC<
-  Props & HTMLProps<HTMLAnchorElement>
-> = ({ href, clasName, children }) => {
-  return (
-    <NextLink href={href}>
-      <a className={clasName}>{children}</a>
-    </NextLink>
-  );
+const Link: FC<Props & HTMLProps<HTMLAnchorElement>> = ({
+    href,
+    className,
+    children,
+}) => {
+    return (
+        <NextLink href={href}>
+            <a className={className}>{children}</a>
+        </NextLink>
+    );
 };
 
 export default Link;

@@ -19,8 +19,8 @@ const Home: NextPage<Props> = ({ results }) => {
     return (
         <div>
             <Head>
-                <title>movies</title>
-                <link rel='icon' href='/icon' />
+                <title>Movie Time</title>
+                <link rel='icon' href='/movieIcon.png' />
             </Head>
             <Header />
             <Navbar />

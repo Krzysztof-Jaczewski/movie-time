@@ -3,7 +3,6 @@ import MovieCard from 'components/molecules/MovieCard';
 import { publicEnvs } from 'configs/envs';
 import { fetchCategoriesData } from 'configs/fetchData';
 import type { GetServerSideProps } from 'next';
-import Head from 'next/head';
 import { FC } from 'react';
 import { MovieType } from 'ts/types';
 
