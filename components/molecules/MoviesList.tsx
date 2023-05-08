@@ -11,16 +11,13 @@ interface Props {
     moviesArray?: MovieType[];
 }
 
-const MoviesList: FC<Props> = ({ moviesArray }) => {
-    console.log('TCL: moviesArray', moviesArray);
-    return (
-        <div className=' flex flex-wrap '>
-            {moviesArray?.map((movie) => (
-                <MovieCard key={movie.id} movieData={movie} />
-            ))}
-        </div>
-    );
-};
+const MoviesList: FC<Props> = ({ moviesArray }) => (
+    <div className='flex flex-wrap justify-center my-7 w-fit gap-3 md:gap-5 mx-auto '>
+        {moviesArray?.map((movie) => (
+            <MovieCard key={movie.id} movieData={movie} />
+        ))}
+    </div>
+);
 
 export default MoviesList;
 

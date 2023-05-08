@@ -2,7 +2,8 @@
 
 ## Demonstration
 
-to see demo click link: [demo](https://movie-time-sage.vercel.app/)
+to see demo click link:
+[demo](https://movie-time-krzysztof-jaczewski.vercel.app/)
 
 ## Getting Started
 
