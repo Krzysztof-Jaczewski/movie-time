@@ -23,6 +23,7 @@ const Home: NextPage<Props> = ({ results }) => {
                 <link rel='icon' href='/movieIcon.png' />
             </Head>
             <Header />
+            <Navbar />
             <MoviesList moviesArray={results} /> footer
         </div>
     );
@@ -30,12 +31,16 @@ const Home: NextPage<Props> = ({ results }) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const { genre } = context.query;
+
     const request = await axios.get(
-        `${publicEnvs.BASE_URL}${fetchCategoriesData.fetchTrending.url}`
+        `${publicEnvs.BASE_URL}${
+            fetchCategoriesData[genre as string]?.url ??
+            fetchCategoriesData.fetchTrending.url
+        }`
     );
     return {
         props: request.data,
     };
 };
-

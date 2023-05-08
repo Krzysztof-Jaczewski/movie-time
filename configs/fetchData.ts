@@ -42,4 +42,4 @@ export const fetchCategoriesData: FetchDataType = {
     ...genresObjects,
 };
 
-export const contentData = Object.entries(fetchCategoriesData);
+export const contentData = Object.entries(genresObjects);

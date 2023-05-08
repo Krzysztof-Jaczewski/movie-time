@@ -1,39 +1,32 @@
-import {
-  AiOutlineHome,
-  AiOutlineThunderbolt,
-} from 'react-icons/ai';
-import {
-  BsPerson,
-  BsPatchCheck,
-  BsSearch,
-  BsCollection,
-} from 'react-icons/bs';
+import { AiOutlineHome } from 'react-icons/ai';
+import { BsPatchCheck, BsSearch, BsCollection } from 'react-icons/bs';
+import { GiTrophyCup } from 'react-icons/gi';
 import { HeaderIconProps } from '../components/atoms/HeaderIcon';
 
-export const headerIconProps: HeaderIconProps[] =
-  [
+export const headerIconProps: HeaderIconProps[] = [
     {
-      title: 'Home',
-      Icon: AiOutlineHome,
+        title: 'Home',
+        Icon: AiOutlineHome,
+        href: '/',
     },
     {
-      title: 'Trending',
-      Icon: AiOutlineThunderbolt,
+        title: 'Top Rated',
+        Icon: GiTrophyCup,
+        href: '/top-rated',
     },
     {
-      title: 'Verified',
-      Icon: BsPatchCheck,
+        title: 'Genres',
+        Icon: BsCollection,
+        href: '/genres',
     },
     {
-      title: 'Collection',
-      Icon: BsCollection,
+        title: 'Search',
+        Icon: BsSearch,
+        href: '/search',
     },
-    {
-      title: 'Search',
-      Icon: BsSearch,
-    },
-    {
-      title: 'Account',
-      Icon: BsPerson,
-    },
-  ];
+    // {
+    //   title: 'Account',
+    //   Icon: BsPerson,
+    //   href:"/"
+    // },
+];

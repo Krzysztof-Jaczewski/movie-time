@@ -5,7 +5,7 @@ import { FC } from 'react';
 const Navbar: FC = () => {
     const router = useRouter();
     const handleClick = (title: string) => () => {
-        router.push(`/?genre=${title}`);
+        router.push(`/genres?genre=${title}`);
     };
 
     return (

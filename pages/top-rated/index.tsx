@@ -15,7 +15,7 @@ interface Props {
     total_results: number;
 }
 
-const Home: NextPage<Props> = ({ results }) => {
+const TopRated: NextPage<Props> = ({ results }) => {
     return (
         <div>
             <Head>
@@ -28,14 +28,13 @@ const Home: NextPage<Props> = ({ results }) => {
     );
 };
 
-export default Home;
+export default TopRated;
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const request = await axios.get(
-        `${publicEnvs.BASE_URL}${fetchCategoriesData.fetchTrending.url}`
+        `${publicEnvs.BASE_URL}${fetchCategoriesData.fetchTopRated.url}`
     );
     return {
         props: request.data,
     };
 };
-
