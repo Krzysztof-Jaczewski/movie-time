@@ -1,4 +1,4 @@
-import Link from 'components/atoms/Link';
+import Link from 'next/link';
 import { FC } from 'react';
 import { IconType } from 'react-icons';
 

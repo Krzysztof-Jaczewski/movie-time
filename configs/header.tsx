@@ -1,7 +1,7 @@
 import { AiOutlineHome } from 'react-icons/ai';
 import { BsPatchCheck, BsSearch, BsCollection } from 'react-icons/bs';
 import { GiTrophyCup } from 'react-icons/gi';
-import { HeaderIconProps } from '../components/atoms/HeaderIcon';
+import { HeaderIconProps } from '../components/HeaderIcon/HeaderIconIcon';
 
 export const headerIconProps: HeaderIconProps[] = [
     {

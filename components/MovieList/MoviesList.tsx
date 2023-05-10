@@ -1,5 +1,5 @@
 import axios from 'axios';
-import MovieCard from 'components/molecules/MovieCard';
+import MovieCard from 'components/MovieCard/MovieCard';
 import { publicEnvs } from 'configs/envs';
 import { fetchCategoriesData } from 'configs/fetchData';
 import type { GetServerSideProps } from 'next';

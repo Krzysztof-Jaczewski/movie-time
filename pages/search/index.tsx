@@ -1,4 +1,4 @@
-import Header from 'components/molecules/Header';
+import Header from 'components/Header/Header';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 

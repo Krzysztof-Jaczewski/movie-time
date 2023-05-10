@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import HeaderIcon from 'components/atoms/HeaderIcon';
+import HeaderIcon from 'components/HeaderIcon/HeaderIconIcon';
 import { headerIconProps } from 'configs/header';
-import Logo from 'components/atoms/Logo';
+import Logo from 'components/Logo/Logo';
 
 // import HeaderIcon from './HeaderIcon';
 
