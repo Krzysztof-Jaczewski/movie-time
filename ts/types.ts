@@ -16,3 +16,10 @@ export interface MovieType {
     vote_average?: number;
     vote_count?: number;
 }
+
+export interface SearchMoviesResponse {
+    page: number;
+    totalPages: number;
+    results: MovieType[];
+    totalResults: number;
+}
