@@ -24,7 +24,7 @@ const genresObjects: FetchDataType = genres.reduce(
             ...prev,
             [`fetch${title}`]: {
                 title,
-                url: `/discover/movie?api_key=${publicEnvs.API_KEY}&with_genres=${id}`,
+                url: `discover/movie?api_key=${publicEnvs.API_KEY}&with_genres=${id}`,
             },
         }),
     {}
@@ -33,11 +33,11 @@ const genresObjects: FetchDataType = genres.reduce(
 export const fetchCategoriesData: FetchDataType = {
     fetchTrending: {
         title: 'Trending',
-        url: `/trending/all/week?api_key=${publicEnvs.API_KEY}&language=en-US`,
+        url: `trending/all/week?api_key=${publicEnvs.API_KEY}&language=en-US`,
     },
     fetchTopRated: {
         title: 'TopRated',
-        url: `/movie/top_rated?api_key=${publicEnvs.API_KEY}&language=en-US`,
+        url: `movie/top_rated?api_key=${publicEnvs.API_KEY}&language=en-US`,
     },
     ...genresObjects,
 };
